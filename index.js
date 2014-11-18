@@ -18,7 +18,7 @@ var fs = require('fs')
 
 // Commandline options
 program
-  .version('0.0.2')
+  .version('0.0.4')
   .option('-u, --url [type]', 'YouTube video URL you wish to convert.', 'https://www.youtube.com/watch?v=NqxSgp385N0')
   .option('-o, --output [type]', 'The name of the output file. [default = ./output/{video-title}.gif', false)
   .option('-f, --fps [type]', 'Frames per second of the output GIF. [default = 10]', 10)
@@ -72,7 +72,7 @@ function metaReady(meta, stream){
   }
   
   if (!program.output) {
-    filename = './output/'+safeTitle+'.gif';
+    filename = safeTitle+'.gif';
   } else {
     filename = program.output;
   }

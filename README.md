@@ -2,7 +2,15 @@
 
 Creates an animated GIF from a YouTube URL.
 
-##Install
+##Prerequisites
+
+You will need ffmpeg to use this package. Assuming you are using OS X, ffmpeg can be installed very easily with Brew.
+
+```bash
+brew install ffmpeg
+```
+
+##Installation
 
 ```bash
 npm install youtube-to-gif -g
