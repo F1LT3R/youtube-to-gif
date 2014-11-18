@@ -1,16 +1,22 @@
 {
   "name": "youtube-to-gif",
   "bin": {
-    "axel": "youtube-to-gif"
+    "youtube-to-gif": "youtube-to-gif"
   },
-  "version": "0.0.1",
-  "description": "Creates an animated gif from a Youtube URL.",
+  "version": "0.0.2",
+  "description": "Creates an animated GIF from a Youtube URL.",
   "main": "index.js",
   "author": "Alistair MacDonald <al@pwn.io>",
   "email": "al@pwn.io",
   "license": "MIT",
   "dependencies": {
+    "ansi": "^0.3.0",
+    "bluebird": "^2.3.11",
+    "commander": "^2.5.0",
     "fluent-ffmpeg": "^2.0.0-rc3",
+    "image-size-stream": "^0.1.1",
+    "pixel-getter": "0.0.3",
+    "sanitize-filename": "^1.1.1",
     "ytdl-core": "^0.2.4"
   },
   "repository": {
