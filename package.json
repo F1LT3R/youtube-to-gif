@@ -3,7 +3,7 @@
   "bin": {
     "youtube-to-gif": "index.js"
   },
-  "version": "0.0.6",
+  "version": "0.0.7",
   "description": "Creates an animated GIF from a Youtube URL.",
   "main": "index.js",
   "author": "Alistair MacDonald <al@pwn.io>",
