@@ -12,7 +12,7 @@
   "dependencies": {
     "ansi": "^0.3.1",
     "bluebird": "^3.7.2",
-    "commander": "^4.1.0",
+    "commander": "^7.2.0",
     "fluent-ffmpeg": "^2.1.2",
     "image-size-stream": "^1.1.0",
     "pixel-getter": "0.0.5",
