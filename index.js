@@ -18,7 +18,7 @@ var fs = require('fs')
 
 // Commandline options
 program
-  .version('0.0.4')
+  .version('0.0.5')
   .option('-u, --url [type]', 'YouTube video URL you wish to convert.', 'https://www.youtube.com/watch?v=NqxSgp385N0')
   .option('-o, --output [type]', 'The name of the output file. [default = ./output/{video-title}.gif', false)
   .option('-f, --fps [type]', 'Frames per second of the output GIF. [default = 10]', 10)
@@ -63,7 +63,7 @@ function getYouTubeVid(url){
 
 // When the meta is ready, we can start converting the stream
 function metaReady(meta, stream){
-  var title = meta.title
+  var title = meta.player_response.videoDetails.title
     , safeTitle = sanitize(title).replace(/ /g, '_')
     ;
   
